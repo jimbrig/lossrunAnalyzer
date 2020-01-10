@@ -1,0 +1,62 @@
+---
+title: "What is a Lossrun ?"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{What is a Lossrun ?}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+# library(lossrunAnalyzer)
+```
+
+## What is a lossrun?
+
+A 'lossrun' is an insurance term for a dataset containing information about a particular insurance coverage or policy's individual claims.
+
+**lossrunAnalyzer** supports analyzing for the following Property Casualty coverages:
+
++ Workers Compensation - WC
++ Automobile Liability - AL
++ General Liability - GL
++ Medical Professional Liability - MPL (Hospitals and Physicians)
++ Other Various Liability Types similar to WC, AL, and GL (i.e. property, government, etc.)
+
+Different coverages have different types of fields in their respective lossruns which is discussed in detail in the coverages vignette.
+
+Each row in a lossrun should correspond to a specific claim.
+
+The following fields are typical in a lossrun:
+
++ Key Fields:
+  - Unique Claim ID
+  - Occurence ID (for claims related to a single accident that are grouped by occurrence)
+  - Claimant Name
+  - Other Claimant Information (Age, Gender, Tenure, etc.)
+  - Policy Details
+
++ Dates
+  - Evaluation Date of the Lossrun
+  - Date of Accident / Loss
+  - Date of Report
+  - Close Date
+
++ Claim Information Fields
+  - Claim Status
+  - Claim Type
+  - Litigation
+
++ Numeric Financial Fields
+  - Total Unlimited Reported / Incurred
+  - Total Unlimited Paid
+  - Total Unlimited Reserve
+  - Various Splits depending on Coverage
+  - Recoveries, Subrogation, etc.

@@ -64,4 +64,8 @@ knitr::knit("README.Rmd")
 
 # add some raw data
 usethis::use_data_raw("example-lossruns")
+usethis::use_git_ignore(ignores = c("*", "!.gitignore"), directory = "data-raw/client-lossruns")
+
+# add a vignette
+usethis::use_vignette("what-is-a-lossrun", "What is a Lossrun ?")
 
