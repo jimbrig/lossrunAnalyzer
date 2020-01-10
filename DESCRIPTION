@@ -1,0 +1,13 @@
+Package: lossrunAnalyzer
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.1
+Authors@R: 
+    person(given = "Jimmy",
+           family = "Briggs",
+           role = c("aut", "cre"),
+           email = "jimmy.briggs@oliverwyman.com")
+Description: What the package does (one paragraph).
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: es
+LazyData: true
