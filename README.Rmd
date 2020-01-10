@@ -33,3 +33,46 @@ You can install lossrunAnalyzer from [GitHub](https://github.com/) with:
 devtools::install_github("jimbrig2011/lossrunAnalyzer")
 ```
 
+## Roadmap
+
+The end-goal of **lossrunAnalyzer** is to provide support for the following: 
+
+- Initial Reasonability Checks:
+  + Unique claim ID
+  + Paid + Case = Incurred
+  + Totals = Sum of Splits
+  + Report Date >= Loss Date
+  + Field Consistency (i.e. States, Status, etc.)
+  
+- Possible Duplicate Detection
+
+- Occurrence Grouping
+
+- Adding "Working" Fields
+  + Retentions / Limits / Deductibles
+  + Various "Limited" Amounts
+  + ALAE Treatments
+  + Years (Policy, Accident, Report, Fiscal, Calendar)
+  + Lags (Report, Close, Tenure)
+  + Max IBNR's at various scenarios
+  + Legal, Lost-Time, Indemnity Support
+
+- Utilizing Lookup / Support Tables
+
+- Record Linkage to Reduce Fuzzyness
+
+- Merging Lossruns Across Multiple Evaluations
+
+- Comparing Lossruns to Prior's and Addressing Various KPI's / Diagnostic Checks
+
+- Anomaly / Outlier Detection
+
+- Automating Development Comments as to why things changed
+
+- Summarizing Data into Triangles
+
+- Performing an AvE (Actual vs. Expected) Analysis Summary
+
+- Checking for Dropped / Missing Claims or New Claims with Old Dates
+
+- Tie Out to Exposures
