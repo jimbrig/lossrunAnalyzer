@@ -1,5 +1,5 @@
 Package: lossrunAnalyzer
-Title: What the Package Does (One Line, Title Case)
+Title: R Package and Shiny App to Analyze Insurance Lossruns
 Version: 0.0.1
 Authors@R: 
     person(given = "Jimmy",
