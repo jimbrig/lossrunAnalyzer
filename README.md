@@ -1,20 +1,20 @@
----
-output: github_document
----
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+# lossrunAnalyzer - Analyzing Insurance Claims Data
 
-
-# lossrunAnalyzer - R Package for Analyzing Insurance Claims Data
-
-The goal of lossrunAnalyzer is to help actuaries quickly analyze and diagnose lossrun data for Property Casualty insurance claims data. 
+The goal of **lossrunAnalyzer** is to assist actuaries to quickly
+analyze, diagnose, and summarize lossruns containing individual claims
+data for property casualty insurance.
 
 ## Badges
 
 <!-- badges: start -->
-[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
-[![Project Status: WIP](https://www.repostatus.org/badges/latest/wip.svg)](http://www.repostatus.org/#wip)
+
+[![Lifecycle:
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![Project Status:
+WIP](https://www.repostatus.org/badges/latest/wip.svg)](http://www.repostatus.org/#wip)
 <!-- badges: end -->
 
 ## Installation
@@ -28,44 +28,48 @@ devtools::install_github("jimbrig2011/lossrunAnalyzer")
 
 ## Roadmap
 
-The end-goal of **lossrunAnalyzer** is to provide support for the following: 
+The end-goal of **lossrunAnalyzer** is to provide support for the
+following:
 
-- Initial Reasonability Checks:
-  + Unique claim ID
-  + Paid + Case = Incurred
-  + Totals = Sum of Splits
-  + Report Date >= Loss Date
-  + Field Consistency (i.e. States, Status, etc.)
-  
-- Possible Duplicate Detection
+  - Initial Reasonability Checks:
+    
+      - Unique claim ID
+      - Paid + Case = Incurred
+      - Totals = Sum of Splits
+      - Report Date \>= Loss Date
+      - Field Consistency (i.e. States, Status, etc.)
 
-- Occurrence Grouping
+  - Possible Duplicate Detection
 
-- Adding "Working" Fields
-  + Retentions / Limits / Deductibles
-  + Various "Limited" Amounts
-  + ALAE Treatments
-  + Years (Policy, Accident, Report, Fiscal, Calendar)
-  + Lags (Report, Close, Tenure)
-  + Max IBNR's at various scenarios
-  + Legal, Lost-Time, Indemnity Support
+  - Occurrence Grouping
 
-- Utilizing Lookup / Support Tables
+  - Adding “Working” Fields
+    
+      - Retentions / Limits / Deductibles
+      - Various “Limited” Amounts
+      - ALAE Treatments
+      - Years (Policy, Accident, Report, Fiscal, Calendar)
+      - Lags (Report, Close, Tenure)
+      - Max IBNR’s at various scenarios
+      - Legal, Lost-Time, Indemnity Support
 
-- Record Linkage to Reduce Fuzzyness
+  - Utilizing Lookup / Support Tables
 
-- Merging Lossruns Across Multiple Evaluations
+  - Record Linkage to Reduce Fuzzyness
 
-- Comparing Lossruns to Prior's and Addressing Various KPI's / Diagnostic Checks
+  - Merging Lossruns Across Multiple Evaluations
 
-- Anomaly / Outlier Detection
+  - Comparing Lossruns to Prior’s and Addressing Various KPI’s /
+    Diagnostic Checks
 
-- Automating Development Comments as to why things changed
+  - Anomaly / Outlier Detection
 
-- Summarizing Data into Triangles
+  - Automating Development Comments as to why things changed
 
-- Performing an AvE (Actual vs. Expected) Analysis Summary
+  - Summarizing Data into Triangles
 
-- Checking for Dropped / Missing Claims or New Claims with Old Dates
+  - Performing an AvE (Actual vs. Expected) Analysis Summary
 
-- Tie Out to Exposures
+  - Checking for Dropped / Missing Claims or New Claims with Old Dates
+
+  - Tie Out to Exposures

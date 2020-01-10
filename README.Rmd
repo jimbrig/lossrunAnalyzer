@@ -13,9 +13,11 @@ knitr::opts_chunk$set(
 )
 ```
 
-# lossrunAnalyzer - R Package for Analyzing Insurance Claims Data
+# lossrunAnalyzer - Analyzing Insurance Claims Data
 
-The goal of lossrunAnalyzer is to help actuaries quickly analyze and diagnose lossrun data for Property Casualty insurance claims data. 
+The goal of **lossrunAnalyzer** is to assist actuaries to quickly analyze, 
+diagnose, and summarize lossruns containing individual claims data for 
+property casualty insurance.
 
 ## Badges
 
