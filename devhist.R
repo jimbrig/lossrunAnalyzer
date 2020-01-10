@@ -18,7 +18,10 @@ library(desc)
 usethis::use_build_ignore("devhist.R")
 
 # add description to DESCRIPTION
-desc::desc_set("Title" = "R Package and Shiny App to Analyze Insurance Lossruns")
+desc::desc_set(
+  Title = "Lossrun Analyzer",
+  Description = "R Package for Interactive Analysis for Insurance Lossruns."
+)
 
 # setup git / version control
 usethis::edit_r_profile() # set ssh as default protocol
@@ -35,6 +38,30 @@ usethis::git_vaccinate()
 usethis::use_github()
 usethis::git_sitrep()
 
-?usethis::use_github()
+# add a readme
+usethis::use_readme_rmd()
 
+# setup namespace and roxygen
+usethis::use_namespace()
+usethis::use_roxygen_md()
+devtools::document()
+
+# setup prelim .R files
+usethis::use_package_doc()
+usethis::use_tibble() # @return a [tibble][tibble::tibble-package]
+usethis::use_pipe()
+usethis::use_testthat()
+devtools::document()
+
+# lifecycle & WIP badge
+usethis::use_lifecycle_badge("Experimental")
+usethis::use_badge(
+  "Project Status: WIP",
+  href = "http://www.repostatus.org/#wip",
+  src = "https://www.repostatus.org/badges/latest/wip.svg"
+)
+knitr::knit("README.Rmd")
+
+# add some raw data
+usethis::use_data_raw("example-lossruns")
 

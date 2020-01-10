@@ -1,13 +1,22 @@
 Package: lossrunAnalyzer
-Title: R Package and Shiny App to Analyze Insurance Lossruns
+Title: Lossrun Analyzer
 Version: 0.0.1
 Authors@R: 
     person(given = "Jimmy",
            family = "Briggs",
            role = c("aut", "cre"),
            email = "jimmy.briggs@oliverwyman.com")
-Description: What the package does (one paragraph).
+Description: R Package for Interactive Analysis for Insurance Lossruns.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Language: es
 LazyData: true
+URL: https://github.com/jimbrig2011/lossrunAnalyzer
+BugReports: https://github.com/jimbrig2011/lossrunAnalyzer/issues
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.0.2
+Imports: 
+    tibble,
+    magrittr
+Suggests: 
+    testthat

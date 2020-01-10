@@ -1,3 +1,5 @@
 ^lossrunAnalyzer\.Rproj$
 ^\.Rproj\.user$
 ^devhist\.R$
+^README\.Rmd$
+^data-raw$
